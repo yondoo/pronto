@@ -1,0 +1,26 @@
+<html t:type="layout" title="Email Marketing Software"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+	xmlns:p="tapestry:parameter">
+
+<div class="row">
+	<div class="col col-md-12">
+		<t:if test="message">
+			<div class="form-error" style="color: red">
+				<p>${message}</p>
+			</div>
+			<p:else>
+				<br />
+			</p:else>
+		</t:if>
+		<t:form t:id="tynamoLoginForm" t:name="Login">
+			<t:textfield t:id="username" type="username" autofocus=""
+				placeholder="username" />
+
+			<t:passwordfield t:id="password" type="password"
+				class="input-block-level" placeholder="password" />
+			<button class="btn btn-primary">Нэвтрэх</button>
+		</t:form>
+	</div>
+</div>
+
+</html>
