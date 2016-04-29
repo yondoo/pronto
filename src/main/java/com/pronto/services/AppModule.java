@@ -25,6 +25,7 @@ public class AppModule {
 	public static void bind(ServiceBinder binder) {
 		binder.bind(CoreDAO.class, CoreDAOHibernate.class);
 		binder.bind(AuthorizingRealm.class, UserRealm.class).withId(UserRealm.class.getSimpleName());
+		binder.bind(EmailService.class);
 	}
 
 	public static void contributeFactoryDefaults(MappedConfiguration<String, Object> configuration) {

@@ -83,7 +83,7 @@ public class Index {
 		data.put("url", componentResources.createEventLink("call").toAbsoluteURI());
 		data.put("user", "Yondonsuren");
 		String html = emailService.getTemplate("test.ftl", data);
-		System.err.println(emailService.sendEmail("tuguldur.j@itzone.mn,n.yondoo@gmail.com,n_yondoo@yahoo.com", "test", html));
+		System.err.println(emailService.sendEmail("tuguldur.j@itzone.mn", "test", html));
 	}
 
 	@Log
