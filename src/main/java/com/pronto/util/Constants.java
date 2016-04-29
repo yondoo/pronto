@@ -97,4 +97,10 @@ public class Constants {
 	 * 
 	 **/
 	public static String[] FILE_TYPE = { "jpg", "png", "tif" };
+	
+	/**
+	 * Event names
+	 */
+	public static final String VIEW_EMAIL = "viewEmail";
+	public static final String CLICK_EMAIL = "clickEmail";
 }

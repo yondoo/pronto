@@ -4,7 +4,7 @@
 </head>
 <body>
   <h1>Welcome ${user}!</h1>
-  <p>Our latest product:
+  <p>Check out our latest news
   <div style="display:none!important;width:0;overflow:hidden;float:left;max-height:0;">
   <img src="${url}" style="display:none!important"/>
   </div>
