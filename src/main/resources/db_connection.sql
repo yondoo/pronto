@@ -3,7 +3,7 @@ cmd:> sqlplus \nolog
 cmd:> conn sys/root as sysdba
 
 --005. Create table_space
-CREATE TABLESPACE PRONTODB1 DATAFILE 'D:\20.Pronto\Database\oradata\PRONTOTESTDB\PRONTODB1.TBS' SIZE 1000M REUSE AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED;
+CREATE TABLESPACE PRONTODB1 DATAFILE 'C:\app\oradata\PRONTODB\PRONTODB1.TBS' SIZE 1000M REUSE AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED;
 
 --006. Create user
 CREATE USER prontodbuser IDENTIFIED BY prontodbuser DEFAULT TABLESPACE PRONTODB1 QUOTA UNLIMITED ON PRONTODB1;
@@ -30,7 +30,7 @@ GRANT exp_full_database to prontodbuser;
 COMMIT;
 
 --008. Create impdp/expdp directory
-create directory backup as 'D:\20.Pronto\Database\backup\';
+create directory backup as 'C:\app\backup\';
 grant read,write on directory backup to prontodbuser;
 
 --009. Import database
