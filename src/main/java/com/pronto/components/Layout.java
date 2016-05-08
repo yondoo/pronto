@@ -35,14 +35,8 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 						"context:js/fullcalendar/fullcalendar.min.js", "context:js/flot/jquery.flot.min.js",
 						"context:js/flot/jquery.flot.resize.min.js", "context:js/flot/jquery.flot.categories.min.js",
 						"context:js/jquery-easypiechart/jquery.easypiechart.min.js",
-						"context:js/jquery.sparkline.min.js", "context:js/jqvmap/jqvmap/jquery.vmap.js",
-						"context:js/jqvmap/jqvmap/maps/jquery.vmap.russia.js",
-						"context:js/jqvmap/jqvmap/maps/jquery.vmap.world.js",
-						"context:js/jqvmap/jqvmap/maps/jquery.vmap.europe.js",
-						"context:js/jqvmap/jqvmap/maps/jquery.vmap.germany.js",
-						"context:js/jqvmap/jqvmap/maps/jquery.vmap.usa.js",
-						"context:js/jqvmap/jqvmap/data/jquery.vmap.sampledata.js", "context:js/app.min.js",
-						"context:js/dashboard.min.js", "context:js/layout.min.js",
+						"context:js/jquery.sparkline.min.js", "context:js/app.min.js", "context:js/dashboard.min.js",
+						"context:js/layout.min.js",
 						"context:js/quick-sidebar.min.js" }, module = { "bootstrap/collapse" })
 
 public class Layout {
