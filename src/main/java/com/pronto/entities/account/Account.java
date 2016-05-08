@@ -219,6 +219,7 @@ public class Account implements Serializable {
 	}
 
 	/* Object identifier */
+	@Override
 	public boolean equals(Object o) {
 		if (this == o)
 			return true;
@@ -240,6 +241,7 @@ public class Account implements Serializable {
 		return getId().equals(e.getId());
 	}
 
+	@Override
 	public int hashCode() {
 		return getUuid().hashCode();
 	}

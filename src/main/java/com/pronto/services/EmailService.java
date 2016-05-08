@@ -72,11 +72,9 @@ public class EmailService {
 
 		} catch (AddressException e) {
 			return false;
-			// e.printStackTrace();
 		} catch (MessagingException e) {
 			System.err.println(e);
 			return false;
-			// e.printStackTrace();
 		}
 		return true;
 	}
@@ -100,10 +98,8 @@ public class EmailService {
 			// This is usually the case for file output, but not for servlet
 			// output.
 		} catch (TemplateException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return "";
