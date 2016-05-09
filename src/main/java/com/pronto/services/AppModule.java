@@ -46,8 +46,7 @@ public class AppModule {
 	@ApplicationDefaults
 	public static void setupEnvironment(MappedConfiguration<String, Object> configuration) {
 		configuration.add(SymbolConstants.JAVASCRIPT_INFRASTRUCTURE_PROVIDER, "jquery");
-		configuration.add(SymbolConstants.MINIFICATION_ENABLED, true);
-		configuration.add(SymbolConstants.BOOTSTRAP_ROOT, "context:js/bootstrap");
+		// configuration.add(SymbolConstants.MINIFICATION_ENABLED, true);
 	}
 
 	@Contribute(HibernateEntityPackageManager.class)

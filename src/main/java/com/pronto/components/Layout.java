@@ -13,7 +13,7 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 
 		stylesheet = { "context:css/font-family.css", "context:css/font-family-opensans.css",
 				"context:css/font-awesome.min.css", "context:css/simple-line-icons.min.css",
-				"context:js/bootstrap/css/bootstrap.min.css", "context:css/uniform.default.css",
+				 "context:css/uniform.default.css",
 				"context:css/bootstrap-switch.min.css", "context:css/daterangepicker.min.css", "context:css/morris.css",
 				"context:css/fullcalendar.min.css", "context:css/jqvmap.css", "context:css/components-md.min.css",
 				"context:css/plugins-md.min.css", "context:css/layout.css",
