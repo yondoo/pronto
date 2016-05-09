@@ -81,9 +81,19 @@
 					</div>
 				</div>
 			</div>
+			<div class="page-content-fixed-header">
+				<div class="content-header-menu">
+					<!-- BEGIN MENU TOGGLER -->
+					<button type="button" class="menu-toggler responsive-toggler"
+						data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="toggle-icon"> <span class="icon-bar"></span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span>
+						</span>
+					</button>
+					<!-- END MENU TOGGLER -->
+				</div>
+			</div>
 			<div class="page-sidebar navbar-collapse collapse">
-				<t:eventlink event="sendEmail" class="btn btn-default">Send test email&raquo;</t:eventlink>
-
 				<ul class="page-sidebar-menu  page-header-fixed "
 					data-keep-expanded="false" data-auto-scroll="true"
 					data-slide-speed="200">
@@ -127,7 +137,9 @@
 				</ul>
 
 			</div>
-			<t:body />
+			<div class="page-sidebar-wrapper">
+				<t:body />
+			</div>
 			<p class="copyright-v2">2016 © Pronto LLC.</p>
 		</div>
 	</div>
