@@ -1,4 +1,4 @@
-package com.pronto.pages;
+package com.pronto.pages.account;
 
 import org.apache.tapestry5.alerts.AlertManager;
 import org.apache.tapestry5.alerts.Duration;
@@ -34,7 +34,7 @@ public class AccountEdit {
 		if (account.getId() == null)
 			account.setPassword("123");
 		dao.saveOrUpdateObject(account);
-		alertManager.alert(Duration.SINGLE, Severity.SUCCESS, "Амжилттай хадгалагдлаа");
+		alertManager.alert(Duration.SINGLE, Severity.SUCCESS, "�?мжилттай хадгалагдлаа");
 		return AccountEdit.class;
 	}
 }

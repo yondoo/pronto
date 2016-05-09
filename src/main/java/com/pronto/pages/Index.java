@@ -43,7 +43,7 @@ public class Index {
 		data.put("url", componentResources.createEventLink(Constants.VIEW_EMAIL).toAbsoluteURI());
 		data.put("user", "Dude");
 		String html = emailService.getTemplate("test.ftl", data);
-		if (emailService.sendEmail("tuguldur.j@itzone.mn", "Pronto Test", html)) {
+		if (emailService.sendEmail("yondonsuren.n@itzone.mn", "Pronto Test", html)) {
 			String successMsg = messages.get("emailSent");
 			alertManager.info(successMsg);
 			System.out.println(successMsg);
