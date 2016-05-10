@@ -16,9 +16,8 @@
 			<div class="container-fluid">
 				<div class="havbar-header">
 					<!-- BEGIN LOGO -->
-					<a id="index" class="navbar-brand"
-						style="color: white; font-family: sans-serif; font-size: x-large;">
-						PRONTO </a>
+					<t:pagelink page="index" class="navbar-brand"
+						style="color: white; font-family: sans-serif; font-size: x-large;">PRONTO</t:pagelink>
 					<!-- END LOGO -->
 					<!-- BEGIN TOPBAR ACTIONS -->
 					<div class="topbar-actions">
@@ -99,7 +98,7 @@
 						data-keep-expanded="false" data-auto-scroll="true"
 						data-slide-speed="200">
 						<li class="nav-item start active open"><a href="javascript:;"
-							class="nav-link nav-toggle"> <i class="icon-home"></i> <span
+							class="nav-link nav-toggle"> <i class="icon-envelope-open"></i> <span
 								class="title"> Message</span><span class="arrow open"></span>
 						</a>
 							<ul class="sub-menu">
@@ -124,20 +123,44 @@
 										class="title"> Blog broadcasts</span>
 								</a></li>
 							</ul></li>
-						<li class="heading">
-							<h3 class="uppercase">Features</h3>
-						</li>
 						<li class="nav-item  "><a href="javascript:;"
 							class="nav-link nav-toggle"> <i class="icon-diamond"></i> <span
-								class="title">UI Features</span> <span class="arrow"></span>
+								class="title">Subscriber</span> <span class="arrow"></span>
 						</a>
 							<ul class="sub-menu">
 								<li class="nav-item  "><a href="ui_colors.html"
-									class="nav-link "> <span class="title">Color Library</span>
+									class="nav-link "> <span class="title">Manage
+											subscribers</span>
 								</a></li>
 								<li class="nav-item  "><a href="ui_general.html"
-									class="nav-link "> <span class="title">General
-											Components</span>
+									class="nav-link "> <span class="title">Add new
+											Subscribers</span>
+								</a></li>
+							</ul></li>
+
+						<li class="nav-item  "><a href="javascript:;"
+							class="nav-link nav-toggle"> <i class="icon-diamond"></i> <span
+								class="title">List option</span> <span class="arrow"></span>
+						</a>
+							<ul class="sub-menu">
+								<li class="nav-item  "><a href="ui_colors.html"
+									class="nav-link "> <span class="title">Manage Lists</span>
+								</a></li>
+								<li class="nav-item  "><a href="ui_general.html"
+									class="nav-link "> <span class="title">List settings</span>
+								</a></li>
+								<li class="nav-item  "><a href="ui_general.html"
+									class="nav-link "> <span class="title">List settings</span>
+								</a></li>
+								<li class="nav-item  "><a href="ui_general.html"
+									class="nav-link "> <span class="title">Custom fields</span>
+								</a></li>
+								<li class="nav-item  "><a href="ui_general.html"
+									class="nav-link "> <span class="title">List
+											Automation</span>
+								</a></li>
+								<li class="nav-item  "><a href="ui_general.html"
+									class="nav-link "> <span class="title">Email parser</span>
 								</a></li>
 							</ul></li>
 					</ul>

@@ -10,8 +10,6 @@
 						<span data-counter="counterup" data-value="7800">7800</span> <small
 							class="font-green-sharp">$</small>
 					</h3>
-					<t:eventlink event="sendEmail" class="btn btn-default">Send test email&raquo;</t:eventlink>
-
 					<small>TOTAL PROFIT</small>
 				</div>
 				<div class="icon">
@@ -122,6 +120,7 @@
 					<span class="caption-subject bold uppercase">Revenue</span> <span
 						class="caption-helper"> distance stats...</span>
 				</div>
+
 				<div class="actions">
 					<a class="btn btn-circle btn-icon-only btn-default" href="#"> <i
 						class="icon-cloud-upload"></i>
@@ -134,6 +133,7 @@
 				</div>
 			</div>
 			<div class="portlet-body">
+				<t:eventlink event="sendEmail" class="btn btn-default">Send test email&raquo;</t:eventlink>
 				<div id="dashboard_amchart_1" class="CSSAnimationChart"></div>
 			</div>
 		</div>

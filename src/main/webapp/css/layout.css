@@ -253,7 +253,7 @@
 	padding: 0;
 	border-radius: 0;
 	line-height: normal;
-	background: #333c43;
+	background: #015F9Cc43;
 	height: 60px;
 	border-left: 1px solid #384047;
 }
@@ -858,7 +858,7 @@ Page sidebar
 
 .page-sidebar .page-sidebar-menu>li>a:hover>i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li>a:hover>i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu>li>a>.title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li>a>.title
@@ -869,7 +869,7 @@ Page sidebar
 
 .page-sidebar .page-sidebar-menu>li>a>i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li>a>i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 	font-size: 18px;
 	text-shadow: none;
 	font-weight: 300;
@@ -911,12 +911,12 @@ Page sidebar
 .page-sidebar .page-sidebar-menu>li.open>a>.arrow:before,
 	.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open>a>.arrow:before
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu>li.open>a>i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open>a>i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu>li.open:hover a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open:hover a
@@ -927,12 +927,12 @@ Page sidebar
 .page-sidebar .page-sidebar-menu>li.open:hover a>.arrow:before,
 	.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open:hover a>.arrow:before
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu>li.open:hover i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open:hover i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu>li.active>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a
@@ -945,7 +945,7 @@ Page sidebar
 
 .page-sidebar .page-sidebar-menu>li.active>a>i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a>i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu>li.active:hover a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active:hover a
@@ -956,12 +956,12 @@ Page sidebar
 .page-sidebar .page-sidebar-menu>li.active:hover a>.arrow:before,
 	.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active:hover a>.arrow:before
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu>li.active:hover i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active:hover i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu li>a>.arrow:before,
@@ -991,7 +991,7 @@ Page sidebar
 .page-sidebar .page-sidebar-menu li>a:hover>.arrow:before,
 	.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li>a:hover>.arrow:before
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu li>a>.badge, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li>a>.badge
@@ -1027,7 +1027,7 @@ Page sidebar
 .page-sidebar .page-sidebar-menu .sub-menu li:hover>a>i,
 	.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li:hover>a>i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu .sub-menu li>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li>a
@@ -1044,7 +1044,7 @@ Page sidebar
 
 .page-sidebar .page-sidebar-menu .sub-menu li>a>i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li>a>i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 	font-size: 16px;
 	margin-right: 1px;
 }
@@ -1099,7 +1099,7 @@ Page sidebar
 
 .page-sidebar .page-sidebar-menu li.active>a>i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li.active>a>i
 	{
-	color: #94e8ff;
+	color: #015F9C;
 }
 
 .page-sidebar .page-sidebar-menu li.active>.sub-menu,
