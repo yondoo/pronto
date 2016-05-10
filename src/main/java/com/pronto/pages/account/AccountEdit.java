@@ -34,7 +34,7 @@ public class AccountEdit {
 		if (account.getId() == null)
 			account.setPassword("123");
 		dao.saveOrUpdateObject(account);
-		alertManager.alert(Duration.SINGLE, Severity.SUCCESS, "�?мжилттай хадгалагдлаа");
+		alertManager.alert(Duration.SINGLE, Severity.SUCCESS, "�?мжилттай хадгалагдлаа");
 		return AccountEdit.class;
 	}
 }

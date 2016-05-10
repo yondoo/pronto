@@ -38,7 +38,7 @@
 							<button type="button" class="btn btn-sm dropdown-toggle"
 								data-toggle="dropdown" data-hover="dropdown"
 								data-close-others="true">
-								<img src="images/avatar1.jpg" alt="" />
+								<img src="${context:images/avatar1.jpg}" alt="" />
 							</button>
 							<ul class="dropdown-menu-v2" role="menu">
 								<li><a href="page_user_profile_1.html"> <i
