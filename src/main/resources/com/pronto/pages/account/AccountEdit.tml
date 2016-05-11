@@ -1,4 +1,4 @@
-<html t:type="layout" title="About pronto"
+<html t:type="layout" title="Account"
 	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
 	xmlns:p="tapestry:parameter">
 <div class="row">
@@ -6,8 +6,12 @@
 		<div class="portlet light bordered">
 			<div class="portlet-title">
 				<div class="caption font-green">
-					<i class="icon-pin font-green"></i> <span
+					<i class="icon-user font-green"></i> <span
 						class="caption-subject bold uppercase"> Account Info</span>
+				</div>
+				<div class="actions">
+					<a class="btn btn-circle btn-icon-only btn-default fullscreen"
+						href="#"> </a>
 				</div>
 			</div>
 			<div class="portlet-body form">

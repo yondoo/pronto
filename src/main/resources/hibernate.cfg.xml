@@ -6,7 +6,7 @@
 
 		<!-- oracle connection configuration -->
 		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:prontodb</property>
 		<property name="hibernate.connection.username">prontodbuser</property>
 		<property name="hibernate.connection.password">prontodbuser</property>
 

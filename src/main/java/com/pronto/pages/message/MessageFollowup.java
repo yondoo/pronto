@@ -1,4 +1,4 @@
-package com.pronto.pages.account;
+package com.pronto.pages.message;
 
 import org.apache.tapestry5.alerts.AlertManager;
 import org.apache.tapestry5.alerts.Duration;
@@ -11,7 +11,7 @@ import org.apache.tapestry5.ioc.annotations.Inject;
 import com.pronto.dao.CoreDAO;
 import com.pronto.entities.account.Account;
 
-public class AccountEdit {
+public class MessageFollowup {
 	@Inject
 	private CoreDAO dao;
 
@@ -35,6 +35,6 @@ public class AccountEdit {
 			account.setPassword("123");
 		dao.saveOrUpdateObject(account);
 		alertManager.alert(Duration.TRANSIENT, Severity.SUCCESS, "sent email");
-		return AccountEdit.class;
+		return MessageFollowup.class;
 	}
 }

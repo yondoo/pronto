@@ -40,24 +40,15 @@
 								<img src="${context:images/avatar1.jpg}" alt="" />
 							</button>
 							<ul class="dropdown-menu-v2" role="menu">
+								<li><t:pagelink page="account/edit" class="icon-user"> My Account</t:pagelink></li>
+
 								<li><a href="page_user_profile_1.html"> <i
-										class="icon-user"></i> My Profile <span
-										class="badge badge-danger">1</span>
+										class="icon-user"></i> Billing Information
 								</a></li>
-								<li><a href="app_calendar.html"> <i
-										class="icon-calendar"></i> My Calendar
-								</a></li>
-								<li><a href="app_inbox.html"> <i
-										class="icon-envelope-open"></i> My Inbox <span
-										class="badge badge-danger"> 3 </span>
-								</a></li>
-								<li><a href="app_todo_2.html"> <i class="icon-rocket"></i>
-										My Tasks <span class="badge badge-success"> 7 </span>
+								<li><a href="page_user_profile_1.html"> <i
+										class="icon-user"></i> Notification
 								</a></li>
 								<li class="divider"></li>
-								<li><a href="page_user_lock_1.html"> <i
-										class="icon-lock"></i> Lock Screen
-								</a></li>
 								<li><a href="page_user_login_1.html"> <i
 										class="icon-key"></i> Log Out
 								</a></li>
@@ -98,40 +89,40 @@
 						data-keep-expanded="false" data-auto-scroll="true"
 						data-slide-speed="200">
 						<li class="nav-item start active open"><a href="javascript:;"
-							class="nav-link nav-toggle"> <i class="icon-envelope-open"></i> <span
+							class="nav-link nav-toggle"> <i class="icon-envelope"></i> <span
 								class="title"> Message</span><span class="arrow open"></span>
 						</a>
 							<ul class="sub-menu">
+								<li class="nav-item start "><t:pagelink page="message/composer"
+										class="navbar-link">
+										<span class="title"><i class="icon-note"></i> Email
+											composer</span>
+									</t:pagelink></li>
 								<li class="nav-item start "><a href="index.html"
-									class="nav-link "> <i class="icon-bar-chart"></i> <span
-										class="title"> Email composer</span>
-								</a></li>
-								<li class="nav-item start "><a href="index.html"
-									class="nav-link "> <i class="icon-bar-chart"></i> <span
+									class="nav-link "> <i class="icon-puzzle"></i> <span
 										class="title"> Template manager</span>
 								</a></li>
 								<li class="nav-item start "><a href="index.html"
-									class="nav-link "> <i class="icon-bar-chart"></i> <span
+									class="nav-link "> <i class="icon-feed"></i> <span
 										class="title"> Broadcasts</span>
 								</a></li>
 								<li class="nav-item start "><a href="index.html"
-									class="nav-link "> <i class="icon-bar-chart"></i> <span
+									class="nav-link "> <i class="icon-users"></i> <span
 										class="title"> Follow up series</span>
 								</a></li>
 								<li class="nav-item start "><a href="index.html"
-									class="nav-link "> <i class="icon-bar-chart"></i> <span
+									class="nav-link "> <i class="icon-globe"></i> <span
 										class="title"> Blog broadcasts</span>
 								</a></li>
 							</ul></li>
 						<li class="nav-item  "><a href="javascript:;"
-							class="nav-link nav-toggle"> <i class="icon-diamond"></i> <span
-								class="title">Subscriber</span> <span class="arrow"></span>
+							class="nav-link nav-toggle"> <i class="icon-user-following"></i>
+								<span class="title"> Subscriber</span> <span class="arrow"></span>
 						</a>
 							<ul class="sub-menu">
 								<li class="nav-item  "><a href="ui_colors.html"
-									class="nav-link "> <span class="title">Manage
-											subscribers</span>
-								</a></li>
+									class="nav-link "><span class="title">Manage
+											subscribers</span> </a></li>
 								<li class="nav-item  "><a href="ui_general.html"
 									class="nav-link "> <span class="title">Add new
 											Subscribers</span>
@@ -139,15 +130,12 @@
 							</ul></li>
 
 						<li class="nav-item  "><a href="javascript:;"
-							class="nav-link nav-toggle"> <i class="icon-diamond"></i> <span
+							class="nav-link nav-toggle"> <i class="icon-list"></i> <span
 								class="title">List option</span> <span class="arrow"></span>
 						</a>
 							<ul class="sub-menu">
 								<li class="nav-item  "><a href="ui_colors.html"
 									class="nav-link "> <span class="title">Manage Lists</span>
-								</a></li>
-								<li class="nav-item  "><a href="ui_general.html"
-									class="nav-link "> <span class="title">List settings</span>
 								</a></li>
 								<li class="nav-item  "><a href="ui_general.html"
 									class="nav-link "> <span class="title">List settings</span>
