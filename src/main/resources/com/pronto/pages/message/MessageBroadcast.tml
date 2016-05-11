@@ -1,59 +1,67 @@
-<html t:type="layout" title="Account"
+<html t:type="layout" title="Message"
 	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
 	xmlns:p="tapestry:parameter">
-<div class="row">
-	<div class="col col-md-12">
-		<div class="portlet light bordered">
-			<div class="portlet-title">
-				<div class="caption font-blue-steel">
-					<i class="icon-feed font-blue-steel"></i> <span
-						class="caption-subject bold uppercase"> Broadcasts</span>
-				</div>
-				<div class="actions">
-					<a class="btn btn-circle btn-icon-only btn-default fullscreen"
-						href="#"> </a>
-				</div>
-			</div>
-			<div class="portlet-body form">
-				<form role="form">
-					<div class="form-body">
-						<div class="form-group form-md-line-input form-md-floating-label has-info">
-							<input type="text" class="form-control" id="form_control_1" /> <label
-								for="form_control_2">First name </label> <span
-								class="help-block"></span>
-						</div>
-						<div class="form-group form-md-line-input form-md-floating-label has-info">
-							<input type="text" class="form-control" id="form_control_1" /> <label
-								for="form_control_1">Last name</label> <span class="help-block"></span>
-						</div>
-						<div class="form-group form-md-line-input form-md-floating-label has-info">
-							<input type="text" class="form-control" id="form_control_1" /> <label
-								for="form_control_1">Email</label>
-						</div>
-						<div class="form-group form-md-line-input form-md-floating-label has-info">
-							<input type="text" class="form-control" id="form_control_1" /> <label
-								for="form_control_1">Phone</label>
-						</div>
-						<div class="form-group form-md-line-input form-md-floating-label has-info">
-							<input type="text" class="form-control" id="form_control_1" /> <label
-								for="form_control_1">Web</label>
-						</div>
-						<div
-							class="form-group form-md-line-input form-md-floating-label has-info">
-							<select class="form-control edited" id="form_control_1">
-								<option value=""></option>
-								<option value="1" selected="selected">Option 1</option>
-								<option value="2">Option 2</option>
-								<option value="3">Option 3</option>
-								<option value="4">Option 4</option>
-							</select> <label for="form_control_1">Dropdown</label>
-						</div>
+<div class="page-fixed-main-content">
+	<div class="row">
+		<div class="col col-md-12">
+			<div class="portlet light bordered">
+				<div class="portlet-title">
+					<div class="caption font-blue-steel">
+						<i class="icon-feed font-blue-steel"></i> <span
+							class="caption-subject bold uppercase"> Broadcasts</span>
 					</div>
-					<div class="form-actions noborder">
-						<button type="button" class="btn blue">Submit</button>
-						<button type="button" class="btn default">Cancel</button>
+					<div class="actions">
+						<a class="btn btn-circle btn-icon-only btn-default fullscreen"
+							href="#"> </a>
 					</div>
-				</form>
+				</div>
+				<div class="portlet-body form">
+					<form role="form">
+						<div class="form-body">
+							<div
+								class="form-group form-md-line-input form-md-floating-label has-info">
+								<input type="text" class="form-control" id="form_control_1" />
+								<label for="form_control_2">First name </label> <span
+									class="help-block"></span>
+							</div>
+							<div
+								class="form-group form-md-line-input form-md-floating-label has-info">
+								<input type="text" class="form-control" id="form_control_1" />
+								<label for="form_control_1">Last name</label> <span
+									class="help-block"></span>
+							</div>
+							<div
+								class="form-group form-md-line-input form-md-floating-label has-info">
+								<input type="text" class="form-control" id="form_control_1" />
+								<label for="form_control_1">Email</label>
+							</div>
+							<div
+								class="form-group form-md-line-input form-md-floating-label has-info">
+								<input type="text" class="form-control" id="form_control_1" />
+								<label for="form_control_1">Phone</label>
+							</div>
+							<div
+								class="form-group form-md-line-input form-md-floating-label has-info">
+								<input type="text" class="form-control" id="form_control_1" />
+								<label for="form_control_1">Web</label>
+							</div>
+							<div
+								class="form-group form-md-line-input form-md-floating-label has-info">
+								<select class="form-control edited" id="form_control_1">
+									<option value=""></option>
+									<option value="1" selected="selected">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+								</select> <label for="form_control_1">Dropdown</label>
+							</div>
+						</div>
+						<div class="form-actions noborder">
+							<button type="button" class="btn blue">Submit</button>
+							<button type="button" class="btn default">Cancel</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

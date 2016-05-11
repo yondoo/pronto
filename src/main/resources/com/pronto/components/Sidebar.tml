@@ -1,0 +1,88 @@
+<t:container
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+	<div class="page-sidebar-wrapper">
+		<div class="page-sidebar navbar-collapse collapse">
+			<ul class="page-sidebar-menu  page-header-fixed "
+				data-keep-expanded="false" data-auto-scroll="true"
+				data-slide-speed="200">
+				<li class="nav-item start active open"><a href="javascript:;"
+					class="nav-link nav-toggle"> <i class="icon-envelope"></i> <span
+						class="title"> Message</span><span class="arrow open"></span>
+				</a>
+					<ul class="sub-menu">
+						<li class="nav-item start "><t:pagelink
+								page="message/composer" class="navbar-link">
+								<span class="title"><i class="icon-note"></i> Email
+									Composer</span>
+							</t:pagelink></li>
+
+						<li class="nav-item start "><t:pagelink
+								page="message/template" class="navbar-link">
+								<span class="title"><i class="icon-puzzle"></i> Template
+									Manager</span>
+							</t:pagelink></li>
+
+						<li class="nav-item start "><t:pagelink
+								page="message/broadcast" class="navbar-link">
+								<span class="title"><i class="icon-feed"></i> Broadcasts</span>
+							</t:pagelink></li>
+
+						<li class="nav-item start "><t:pagelink
+								page="message/followup" class="navbar-link">
+								<span class="title"><i class="icon-users"></i> Follow Up
+									Series</span>
+							</t:pagelink></li>
+						<li class="nav-item start "><t:pagelink page="message/blog"
+								class="navbar-link">
+								<span class="title"><i class="icon-globe"></i> Blog
+									Broadcasts</span>
+							</t:pagelink></li>
+					</ul></li>
+				<li class="nav-item  "><a href="javascript:;"
+					class="nav-link nav-toggle"> <i class="icon-user-following"></i>
+						<span class="title"> Subscriber</span> <span class="arrow"></span>
+				</a>
+					<ul class="sub-menu">
+						<li class="nav-item start "><t:pagelink
+								page="subscriber/edit" class="navbar-link">
+								<span class="title">Manage Subscribers</span>
+							</t:pagelink></li>
+
+						<li class="nav-item start "><t:pagelink
+								page="subscriber/manager" class="navbar-link">
+								<span class="title">Add new Subscribers</span>
+							</t:pagelink></li>
+					</ul></li>
+
+				<li class="nav-item  "><a href="javascript:;"
+					class="nav-link nav-toggle"> <i class="icon-list"></i> <span
+						class="title">List Option</span> <span class="arrow"></span>
+				</a>
+					<ul class="sub-menu">
+						<li class="nav-item start "><t:pagelink page="list/manager"
+								class="navbar-link">
+								<span class="title">Manage Lists</span>
+							</t:pagelink></li>
+
+						<li class="nav-item start "><t:pagelink page="list/settings"
+								class="navbar-link">
+								<span class="title">List Settings</span>
+							</t:pagelink></li>
+						<li class="nav-item start "><t:pagelink page="list/fields"
+								class="navbar-link">
+								<span class="title">Custom Fields</span>
+							</t:pagelink></li>
+						<li class="nav-item start "><t:pagelink
+								page="list/automation" class="navbar-link">
+								<span class="title">List Automation</span>
+							</t:pagelink></li>
+						<li class="nav-item start "><t:pagelink page="list/parser"
+								class="navbar-link">
+								<span class="title">Email Parser</span>
+							</t:pagelink></li>
+					</ul></li>
+			</ul>
+
+		</div>
+	</div>
+</t:container>
