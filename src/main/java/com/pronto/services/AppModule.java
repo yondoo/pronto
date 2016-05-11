@@ -15,6 +15,8 @@ import org.apache.tapestry5.ioc.annotations.InjectService;
 import org.apache.tapestry5.ioc.services.ApplicationDefaults;
 import org.apache.tapestry5.ioc.services.SymbolProvider;
 import org.tynamo.security.SecuritySymbols;
+import org.tynamo.security.services.SecurityFilterChainFactory;
+import org.tynamo.security.services.impl.SecurityFilterChain;
 
 import com.pronto.dao.CoreDAO;
 import com.pronto.dao.CustomHibernateConfigurer;
@@ -35,18 +37,27 @@ public class AppModule {
 
 	public static void contributeApplicationDefaults(MappedConfiguration<String, Object> configuration) {
 		configuration.add(SecuritySymbols.LOGIN_URL, "/login");
-		configuration.add(SecuritySymbols.UNAUTHORIZED_URL, "/login");
 		configuration.add(SecuritySymbols.SUCCESS_URL, "/index");
-		configuration.add(SymbolConstants.SUPPORTED_LOCALES, "mn");
+		configuration.add(SecuritySymbols.UNAUTHORIZED_URL, "/login");
+		configuration.add(SymbolConstants.SUPPORTED_LOCALES, "eng");
 		configuration.add(SymbolConstants.HMAC_PASSPHRASE, "pronto");
 		configuration.add(SymbolConstants.ENABLE_PAGELOADING_MASK, false);
+	}
+
+	public static void contributeSecurityConfiguration(Configuration<SecurityFilterChain> configuration,
+			SecurityFilterChainFactory factory) {
+		configuration.add(factory.createChain("/assets/**").add(factory.anon()).build());
+		configuration.add(factory.createChain("/modules**/**").add(factory.anon()).build());
+		configuration.add(factory.createChain("/login").add(factory.anon()).build());
+		configuration.add(factory.createChain("/login**").add(factory.anon()).build());
+		configuration.add(factory.createChain("/images/**").add(factory.anon()).build());
+		configuration.add(factory.createChain("/**").add(factory.authc()).build());
 	}
 
 	@Contribute(SymbolProvider.class)
 	@ApplicationDefaults
 	public static void setupEnvironment(MappedConfiguration<String, Object> configuration) {
 		configuration.add(SymbolConstants.JAVASCRIPT_INFRASTRUCTURE_PROVIDER, "jquery");
-		// configuration.add(SymbolConstants.MINIFICATION_ENABLED, true);
 	}
 
 	@Contribute(HibernateEntityPackageManager.class)
