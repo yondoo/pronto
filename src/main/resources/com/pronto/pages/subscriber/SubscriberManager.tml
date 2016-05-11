@@ -6,8 +6,8 @@
 		<div class="portlet light bordered">
 			<div class="portlet-title">
 				<div class="caption font-blue-steel">
-					<i class="icon-user font-blue-steel"></i> <span
-						class="caption-subject bold uppercase"> Account Info</span>
+					<i class="icon-user-follow font-blue-steel"></i> <span
+						class="caption-subject bold uppercase"> Add new Subscriber</span>
 				</div>
 				<div class="actions">
 					<a class="btn btn-circle btn-icon-only btn-default fullscreen"

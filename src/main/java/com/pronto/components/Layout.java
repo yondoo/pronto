@@ -11,13 +11,12 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 
 @Import(
 
-		stylesheet = { "context:css/font-family.css", "context:css/font-family-opensans.css",
+		stylesheet = { "context:css/font-family.css", /* "context:css/font-family-opensans.css", */
 				"context:css/font-awesome.min.css", "context:css/simple-line-icons.min.css",
-				 "context:css/uniform.default.css",
-				"context:css/bootstrap-switch.min.css", "context:css/daterangepicker.min.css", "context:css/morris.css",
-				"context:css/fullcalendar.min.css", "context:css/jqvmap.css", "context:css/components-md.min.css",
-				"context:css/plugins-md.min.css", "context:css/layout.css",
-				"context:css/custom.min.css" }, library = { "context:js/jquery.min.js",
+				"context:css/uniform.default.css", "context:css/bootstrap-switch.min.css",
+				"context:css/daterangepicker.min.css", "context:css/morris.css", "context:css/fullcalendar.min.css",
+				"context:css/jqvmap.css", "context:css/components-md.min.css", "context:css/plugins-md.min.css",
+				"context:css/layout.css", "context:css/custom.min.css" }, library = { "context:js/jquery.min.js",
 						"context:js/bootstrap/js/bootstrap.min.js", "context:js/js.cookie.min.js",
 						"context:js/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
 						"context:js/jquery-slimscroll/jquery.slimscroll.min.js", "context:js/jquery.blockui.min.js",

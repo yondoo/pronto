@@ -1,0 +1,29 @@
+<html t:type="layout" title="Account"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+	xmlns:p="tapestry:parameter">
+<div class="row">
+	<div class="col col-md-12">
+		<div class="portlet light bordered">
+			<div class="portlet-title">
+				<div class="caption font-blue-steel">
+					<i class="icon-puzzle font-blue-steel"></i> <span
+						class="caption-subject bold uppercase"> Template Manager</span>
+				</div>
+				<div class="actions">
+					<a class="btn btn-circle btn-icon-only btn-default fullscreen"
+						href="#"> </a>
+				</div>
+			</div>
+			<div class="portlet-body form">
+				<form role="form">
+					<div class="form-body"></div>
+					<div class="form-actions noborder">
+						<button type="button" class="btn blue">Submit</button>
+						<button type="button" class="btn default">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</html>
