@@ -77,6 +77,10 @@ public class Login {
 			user = new Account();
 			user.setUsername("pronto");
 			user.setPassword("123");
+			user.setFirstName("Pronto");
+			user.setLastName("Pronto");
+			user.setEmail("contact@pronto.com");
+			user.setWebsite("pronto.com");
 			dao.saveOrUpdateObject(user);
 		}
 	}
