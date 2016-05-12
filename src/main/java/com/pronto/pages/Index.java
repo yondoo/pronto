@@ -44,9 +44,7 @@ public class Index {
 		data.put("user", "Dude");
 		String html = emailService.getTemplate("test.ftl", data);
 		if (emailService.sendEmail("yondonsuren.n@itzone.mn", "Pronto Test", html)) {
-			String successMsg = messages.get("emailSent");
-			alertManager.info(successMsg);
-			System.out.println(successMsg);
+			alertManager.info("Email has been sent successfully.");
 		}
 	}
 

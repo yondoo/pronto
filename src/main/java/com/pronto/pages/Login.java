@@ -1,7 +1,5 @@
 package com.pronto.pages;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.util.SavedRequest;
@@ -12,12 +10,9 @@ import org.apache.tapestry5.annotations.Import;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.annotations.SessionState;
-import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
-import org.apache.tapestry5.services.Context;
 import org.apache.tapestry5.services.RequestGlobals;
 import org.apache.tapestry5.services.Response;
-import org.hibernate.Session;
 import org.slf4j.Logger;
 import org.tynamo.security.internal.services.LoginContextService;
 import org.tynamo.security.services.SecurityService;
@@ -42,23 +37,17 @@ stylesheet = { "context:css/font-family.css", "context:css/font-family-opensans.
 				"context:js/app.min.js", "context:js/login.js" })
 public class Login {
 
+	@SessionState
+	private LoginState loginState;
+
 	@Inject
 	private Logger logger;
 
 	@Inject
 	private AlertManager alertManager;
 
-	@SessionState
-	private LoginState loginState;
-
 	@Inject
 	private CoreDAO dao;
-
-	@Property
-	private String email;
-
-	@Property
-	private String password;
 
 	@Inject
 	private SecurityService securityService;
@@ -67,33 +56,20 @@ public class Login {
 	private RequestGlobals requestGlobals;
 
 	@Inject
-	private HttpServletRequest http;
-
-	@Inject
 	private Response response;
 
 	@Inject
 	private LoginContextService pageService;
 
 	@Property
+	private String password;
+
+	@Property
 	private String username;
-
-	@Inject
-	private Messages messages;
-
-	@Inject
-	private Session session;
 
 	@Property
 	@Persist(PersistenceConstants.FLASH)
 	private String message, normal;
-
-	@Property
-	@Persist
-	private Account account;
-
-	@Inject
-	private Context context;
 
 	void setupRender() {
 		Account user = dao.getUser("pronto");
