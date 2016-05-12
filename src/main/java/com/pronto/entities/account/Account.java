@@ -39,9 +39,11 @@ public class Account implements Serializable {
 	private byte[] passwordSalt;
 	private String firstName;
 	private String lastName;
-	@Validate(value = "maxlength=10, regexp=^[A-Za-zА-Яа-я0-9]+$")
+	@Validate(value = "maxlength=40, regexp=^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}$")
 	private String email;
+	@Validate(value = "regexp=^[-0-9]+$")
 	private String phoneNumber;
+	@Validate(value = "regexp=^(http:\\/\\/|https:\\/\\/)?(www.)?([a-zA-Z0-9]+).[a-zA-Z0-9]*.[a-z]{3}.?([a-z]+)?$")
 	private String website;
 	private String companyName;
 

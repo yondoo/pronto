@@ -50,9 +50,9 @@
 										<i class="icon-speech"></i> Notification
 								</t:pagelink></li>
 								<li class="divider"></li>
-								<li><t:pagelink page="account/edit">
+								<li><t:eventlink t:event="signout">
 										<i class="icon-key"></i> Log Out
-								</t:pagelink></li>
+								</t:eventlink></li>
 							</ul>
 						</div>
 						<!-- END USER PROFILE -->

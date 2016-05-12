@@ -8,6 +8,9 @@ import org.apache.tapestry5.annotations.Parameter;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.ioc.annotations.Symbol;
+import org.apache.tapestry5.services.Request;
+
+import com.pronto.pages.Login;
 
 @Import(
 
@@ -41,6 +44,9 @@ import org.apache.tapestry5.ioc.annotations.Symbol;
 public class Layout {
 	@Inject
 	private ComponentResources resources;
+	
+	@Inject
+	private Request request;
 
 	/**
 	 * The page title, for the <title> element and the
@@ -66,4 +72,8 @@ public class Layout {
 		return new String[] { "AccountEdit", "Contact" };
 	}
 
+	Object onSignout() {
+		request.getSession(false).invalidate();
+		return Login.class;
+	}
 }

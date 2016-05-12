@@ -5,13 +5,18 @@ import org.apache.tapestry5.alerts.Duration;
 import org.apache.tapestry5.alerts.Severity;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.annotations.SessionState;
 import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 
+import com.pronto.aso.LoginState;
 import com.pronto.dao.CoreDAO;
 import com.pronto.entities.account.Account;
 
 public class AccountEdit {
+	@SessionState
+	private LoginState loginState;
+
 	@Inject
 	private CoreDAO dao;
 
@@ -26,15 +31,14 @@ public class AccountEdit {
 	private Messages messages;
 
 	void beginRender() {
-		if (account == null)
-			account = new Account();
+		if (account == null) {
+			account = loginState.getAccount();
+		}
 	}
 
 	Object onSubmit() {
-		if (account.getId() == null)
-			account.setPassword("123");
 		dao.saveOrUpdateObject(account);
-		alertManager.alert(Duration.TRANSIENT, Severity.SUCCESS, "sent email");
+		alertManager.alert(Duration.TRANSIENT, Severity.SUCCESS, "Your account information updated successfully.");
 		return AccountEdit.class;
 	}
 }
