@@ -2,8 +2,10 @@ package com.pronto.entities.form;
 
 import javax.persistence.Entity;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
 
 import com.pronto.entities.core.LogObject;
+import com.pronto.entities.list.List;
 import com.pronto.entities.message.Message;
 
 @Entity
@@ -22,8 +24,11 @@ public class SignupForm extends LogObject {
 	private PageType alreadySubscribedPageType;
 	private String subscribedPageURL;
 	private String adTracking;
+	@ManyToOne
 	private Message startOnMessage;
 	private Boolean passFormData;
+	@ManyToOne
+	private List list;
 
 	public String getName() {
 		return name;
@@ -95,6 +100,14 @@ public class SignupForm extends LogObject {
 
 	public void setPassFormData(Boolean passFormData) {
 		this.passFormData = passFormData;
+	}
+
+	public List getList() {
+		return list;
+	}
+
+	public void setList(List list) {
+		this.list = list;
 	}
 
 }

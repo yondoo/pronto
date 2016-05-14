@@ -29,7 +29,7 @@ public class Subscriber extends LogObject {
 	private String addURL;
 	private String addIP;
 	private String confirmationIP;
-	private Date dateLastFollowUp;
+	private Date dateLastFollowup;
 	private Date dateStopped;
 	private Date dateConfirmed;
 	private String country;
@@ -149,12 +149,12 @@ public class Subscriber extends LogObject {
 		this.confirmationIP = confirmationIP;
 	}
 
-	public Date getDateLastFollowUp() {
-		return dateLastFollowUp;
+	public Date getDateLastFollowup() {
+		return dateLastFollowup;
 	}
 
-	public void setDateLastFollowUp(Date dateLastFollowUp) {
-		this.dateLastFollowUp = dateLastFollowUp;
+	public void setDateLastFollowup(Date dateLastFollowup) {
+		this.dateLastFollowup = dateLastFollowup;
 	}
 
 	public Date getDateStopped() {
