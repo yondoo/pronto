@@ -16,7 +16,7 @@ public class FollowupSeries extends LogObject {
 
 	@ManyToOne
 	private Message message;
-	private Integer order;
+	private Integer seriesOrder;
 	private Integer sendInterval;
 	private TimeUnit timeUnit;
 	private Double spamScore;
@@ -30,12 +30,12 @@ public class FollowupSeries extends LogObject {
 		this.message = message;
 	}
 
-	public Integer getOrder() {
-		return order;
+	public Integer getSeriesOrder() {
+		return seriesOrder;
 	}
 
-	public void setOrder(Integer order) {
-		this.order = order;
+	public void setSeriesOrder(Integer seriesOrder) {
+		this.seriesOrder = seriesOrder;
 	}
 
 	public Integer getSendInterval() {

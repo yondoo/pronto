@@ -30,8 +30,6 @@ public class List extends LogObject {
 	private String confirmSubject;
 	private String confirmMessageBody;
 	private String confirmSuccessPageURL;
-	private Boolean sendConfirmedOptinForWebForm;
-	private Boolean sendConfirmedOptinForImport;
 
 	public String getName() {
 		return name;
@@ -175,22 +173,6 @@ public class List extends LogObject {
 
 	public void setConfirmSuccessPageURL(String confirmSuccessPageURL) {
 		this.confirmSuccessPageURL = confirmSuccessPageURL;
-	}
-
-	public Boolean getSendConfirmedOptinForWebForm() {
-		return sendConfirmedOptinForWebForm;
-	}
-
-	public void setSendConfirmedOptinForWebForm(Boolean sendConfirmedOptinForWebForm) {
-		this.sendConfirmedOptinForWebForm = sendConfirmedOptinForWebForm;
-	}
-
-	public Boolean getSendConfirmedOptinForImport() {
-		return sendConfirmedOptinForImport;
-	}
-
-	public void setSendConfirmedOptinForImport(Boolean sendConfirmedOptinForImport) {
-		this.sendConfirmedOptinForImport = sendConfirmedOptinForImport;
 	}
 
 }
