@@ -21,20 +21,16 @@ import com.pronto.aso.LoginState;
 import com.pronto.dao.CoreDAO;
 import com.pronto.entities.account.Account;
 
-@Import(
-
-stylesheet = { "context:css/font-family.css", "context:css/font-family-opensans.css",
+@Import(stylesheet = { "context:css/font-family.css", "context:css/font-family-opensans.css",
 		"context:css/font-awesome.min.css", "context:css/simple-line-icons.min.css", "context:css/uniform.default.css",
 		"context:css/bootstrap-switch.min.css", "context:js/select2/css/select2.min.css",
 		"context:js/select2/css/select2-bootstrap.min.css", "context:css/components-md.min.css",
 		"context:css/plugins-md.min.css", "context:css/login.css", "context:css/custom.min.css" }, library = {
-				"context:js/bootstrap/js/bootstrap.min.js", "context:js/js.cookie.min.js",
+				"context:js/jquery.min.js","context:js/bootstrap/js/bootstrap.min.js", "context:js/js.cookie.min.js",
 				"context:js/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
 				"context:js/bootstrap-switch/js/bootstrap-switch.min.js", "context:js/moment.min.js",
-				"context:js/jquery-validation/js/jquery.validate.min.js",
-				"context:js/jquery-validation/js/additional-methods.min.js",
-				"context:js/select2/js/select2.full.min.js", "context:js/backstretch/jquery.backstretch.min.js",
-				"context:js/app.min.js", "context:js/login.js" })
+				"context:js/jquery-validation/js/jquery.validate.min.js", "context:js/select2/js/select2.full.min.js",
+				"context:js/backstretch/jquery.backstretch.min.js", "context:js/app.min.js", "context:js/login.js" })
 public class Login {
 
 	@SessionState
@@ -69,7 +65,13 @@ public class Login {
 
 	@Property
 	@Persist(PersistenceConstants.FLASH)
-	private String message, normal;
+	private String message;
+
+	@Property
+	@Persist(PersistenceConstants.FLASH)
+	private String normal;
+
+	private String strGET = "GET";
 
 	void setupRender() {
 		Account user = dao.getUser("pronto");
@@ -96,16 +98,13 @@ public class Login {
 			Account account = dao.getUser(username);
 			loginState.setAccount(account);
 			SavedRequest savedRequest = WebUtils.getAndClearSavedRequest(requestGlobals.getHTTPServletRequest());
-			if (savedRequest != null && savedRequest.getMethod().equalsIgnoreCase("GET")) {
-				System.err.println("requestUrl:" + savedRequest.getRequestUrl());
+			if (savedRequest != null && savedRequest.getMethod().equalsIgnoreCase(strGET)) {
 				response.sendRedirect(savedRequest.getRequestUrl());
 				return null;
 			} else {
-				System.err.println("success");
 				return pageService.getSuccessURL();
 			}
 		} catch (Exception e) {
-			System.err.println("success!");
 			alertManager.error("Wrong username or password!");
 			return pageService.getLoginURL();
 		}

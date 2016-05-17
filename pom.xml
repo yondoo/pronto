@@ -152,7 +152,7 @@
 		</repository>
 	</repositories>
 	<properties>
-		<tapestry-release-version>5.4.0</tapestry-release-version>
+		<tapestry-release-version>5.4.1</tapestry-release-version>
 		<servlet-api-release-version>2.5</servlet-api-release-version>
 		<testng-release-version>6.8.21</testng-release-version>
 		<slf4j-release-version>1.7.13</slf4j-release-version>
