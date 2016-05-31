@@ -76,4 +76,5 @@ public class Layout {
 		request.getSession(false).invalidate();
 		return Login.class;
 	}
+	
 }

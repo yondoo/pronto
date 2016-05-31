@@ -5,7 +5,7 @@
 
 		<!-- oracle connection configuration -->
 		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:prontodb</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@prontodb.c5qpw79stozk.us-east-1.rds.amazonaws.com:1521</property>
 		<property name="hibernate.connection.username">prontodbuser</property>
 		<property name="hibernate.connection.password">prontodbuser</property>
 		<property name="hibernate.default_schema">prontodbuser</property>
